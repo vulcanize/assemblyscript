@@ -46,5 +46,8 @@
   ],
   "devDependencies": {
     "esm2umd": "^0.1.2"
+  },
+  "dependencies": {
+    "asyncify-wasm": "^1.2.1"
   }
 }

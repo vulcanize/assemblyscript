@@ -21,6 +21,7 @@
     "url": "https://github.com/AssemblyScript/assemblyscript/issues"
   },
   "dependencies": {
+    "asyncify-wasm": "^1.2.1",
     "binaryen": "101.0.0-nightly.20210723",
     "long": "^4.0.0",
     "source-map-support": "^0.5.19",
