@@ -1,5 +1,5 @@
 {
-  "name": "assemblyscript",
+  "name": "@deep-stack/assemblyscript",
   "description": "Definitely not a TypeScript to WebAssembly compiler.",
   "keywords": [
     "typescript",
@@ -8,14 +8,14 @@
     "assemblyscript",
     "wasm"
   ],
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Daniel Wirtz <dcode+assemblyscript@dcode.io>",
   "contributors": [],
   "license": "Apache-2.0",
   "homepage": "https://assemblyscript.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AssemblyScript/assemblyscript.git"
+    "url": "https://github.com/deep-stack/assemblyscript.git"
   },
   "bugs": {
     "url": "https://github.com/AssemblyScript/assemblyscript/issues"
@@ -129,5 +129,8 @@
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/assemblyscript"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
