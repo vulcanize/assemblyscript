@@ -1,5 +1,5 @@
 {
-  "name": "@vulcanize/assemblyscript",
+  "name": "assemblyscript",
   "description": "Definitely not a TypeScript to WebAssembly compiler.",
   "keywords": [
     "typescript",
@@ -131,6 +131,6 @@
     "url": "https://opencollective.com/assemblyscript"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://git.vdb.to/api/packages/cerc-io/npm/"
   }
 }
