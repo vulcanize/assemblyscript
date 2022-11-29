@@ -85,20 +85,20 @@ export interface ASUtil {
   /** Tests whether a managed object is an instance of the class represented by the specified base id. */
   __instanceof(ptr: number, baseId: number): boolean;
   /** Allocates a new string in the module's memory and returns a reference (pointer) to it. */
-  __newString(str: string): number;
+  __newString(str: string): Promise<number>;
   /** Allocates a new ArrayBuffer in the module's memory and returns a reference (pointer) to it. */
-  __newArrayBuffer(buf: ArrayBuffer): number;
+  __newArrayBuffer(buf: ArrayBuffer): Promise<number>;
   /** Allocates a new array in the module's memory and returns a reference (pointer) to it. */
-  __newArray(id: number, values: ArrayLike<number>): number;
+  __newArray(id: number, values: ArrayLike<number>): Promise<number>;
 
   /** Allocates an instance of the class represented by the specified id. */
-  __new(size: number, id: number): number;
+  __new(size: number, id: number): Promise<number>;
   /** Pins a managed object externally, preventing it from becoming garbage collected. */
-  __pin(ptr: number): number;
+  __pin(ptr: number): Promise<number>;
   /** Unpins a managed object externally, allowing it to become garbage collected. */
-  __unpin(ptr: number): void;
+  __unpin(ptr: number): Promise<void>;
   /** Performs a full garbage collection cycle. */
-  __collect(incremental?: boolean): void;
+  __collect(incremental?: boolean): Promise<void>;
 }
 
 /** Asynchronously instantiates an AssemblyScript module from anything that can be instantiated. */

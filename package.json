@@ -8,19 +8,20 @@
     "assemblyscript",
     "wasm"
   ],
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Daniel Wirtz <dcode+assemblyscript@dcode.io>",
   "contributors": [],
   "license": "Apache-2.0",
   "homepage": "https://assemblyscript.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AssemblyScript/assemblyscript.git"
+    "url": "https://github.com/vulcanize/assemblyscript.git"
   },
   "bugs": {
     "url": "https://github.com/AssemblyScript/assemblyscript/issues"
   },
   "dependencies": {
+    "asyncify-wasm": "^1.2.1",
     "binaryen": "101.0.0-nightly.20210723",
     "long": "^4.0.0",
     "source-map-support": "^0.5.19",
@@ -128,5 +129,8 @@
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/assemblyscript"
+  },
+  "publishConfig": {
+    "registry": "https://git.vdb.to/api/packages/cerc-io/npm/"
   }
 }
