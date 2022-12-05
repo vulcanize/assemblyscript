@@ -17,10 +17,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn
+      - run: npm ci
       - name: Run yarn build
         run: |
-          yarn build
+          npm run build
       - name: Configure git.vdb.to npm registry
         run: |
           npm config set registry https://git.vdb.to/api/packages/cerc-io/npm/
