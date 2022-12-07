@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - name: Run yarn build
+      - name: Run build
         run: |
           npm run build
       - name: Configure git.vdb.to npm registry
